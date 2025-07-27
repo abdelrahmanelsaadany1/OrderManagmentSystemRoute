@@ -41,7 +41,7 @@ namespace WebAPI.Controllers
 
 
         [HttpGet("{customerId}/orders")]
-        [Authorize(Roles = "Customer")]
+        
         public async Task<IActionResult> GetCustomerOrders(int customerId)
         {
             try
