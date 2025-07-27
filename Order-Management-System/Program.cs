@@ -63,6 +63,19 @@ namespace Order_Management_System
     });
             #endregion
 
+
+            #region Cors Policy Commented For Future Work I will tell you in read-me file how to use
+            //builder.Services.AddCors(Options=>
+            //{
+            //    Options.AddPolicy("MyPolicy", policy =>
+            //    {
+            //        policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+
+            //    });
+            //}        
+            //);
+            #endregion
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -71,6 +84,10 @@ namespace Order_Management_System
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            #region Cors Policy For Future Front-End
+            //app.UseCors("MyPolicy");
+            #endregion
+            
 
             app.UseHttpsRedirection();
             app.UseAuthentication();

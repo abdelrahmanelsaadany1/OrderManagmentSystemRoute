@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36301.6 d17.14
+VisualStudioVersion = 17.14.36301.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Order-Management-System", "Order-Management-System\Order-Management-System.csproj", "{6E63D9D7-5E6D-42E2-A90E-74B66011F2CB}"
 EndProject
@@ -16,8 +16,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{555FB908-84C4-480A-9662-A4B41AF65096}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "persistence", "Infrastructure\persistence\persistence.csproj", "{7812F926-B23A-4AB1-B39B-06DAD90465A5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "presentation", "Infrastructure\presentation\presentation.csproj", "{82D9585B-13DD-453A-A74C-DB78CC0569DC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{0F3D4552-DCDD-4644-96B6-D00B50BB58CA}"
 EndProject
@@ -47,10 +45,6 @@ Global
 		{7812F926-B23A-4AB1-B39B-06DAD90465A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7812F926-B23A-4AB1-B39B-06DAD90465A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7812F926-B23A-4AB1-B39B-06DAD90465A5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{82D9585B-13DD-453A-A74C-DB78CC0569DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{82D9585B-13DD-453A-A74C-DB78CC0569DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{82D9585B-13DD-453A-A74C-DB78CC0569DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{82D9585B-13DD-453A-A74C-DB78CC0569DC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0F3D4552-DCDD-4644-96B6-D00B50BB58CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0F3D4552-DCDD-4644-96B6-D00B50BB58CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F3D4552-DCDD-4644-96B6-D00B50BB58CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -64,7 +58,6 @@ Global
 		{10CE705F-1CB4-4070-9FC5-8F59806A8145} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{ACDE1EBE-0BC6-4E2E-BBF8-5C572A96D885} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{7812F926-B23A-4AB1-B39B-06DAD90465A5} = {555FB908-84C4-480A-9662-A4B41AF65096}
-		{82D9585B-13DD-453A-A74C-DB78CC0569DC} = {555FB908-84C4-480A-9662-A4B41AF65096}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {45CC31B9-FBF6-4DB2-AFF4-D708FCE196F7}
