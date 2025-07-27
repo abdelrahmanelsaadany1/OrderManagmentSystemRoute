@@ -10,7 +10,7 @@ namespace WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+    
     public class CustomersController : ControllerBase
     {
         private readonly IcustomerService _customerService;
@@ -22,6 +22,7 @@ namespace WebAPI.Controllers
 
      
         [HttpPost]
+        [Authorize(Roles = "Admin,Customer")]
         public async Task<IActionResult> AddCustomer([FromBody] CustomerDto dto)
         {
             try
@@ -41,7 +42,8 @@ namespace WebAPI.Controllers
 
 
         [HttpGet("{customerId}/orders")]
-        
+        [Authorize(Roles = "Admin,Customer")]
+
         public async Task<IActionResult> GetCustomerOrders(int customerId)
         {
             try
@@ -50,8 +52,6 @@ namespace WebAPI.Controllers
                 int tokenCustomerId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? "0");
 
              
-                if (tokenCustomerId != customerId)
-                    return Forbid(); 
 
                 var orders = await _customerService.GetCustomerOrdersAsync(customerId);
                 return Ok(orders);
