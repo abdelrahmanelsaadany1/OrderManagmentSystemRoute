@@ -2,6 +2,15 @@
 
 ASP.NET Core Web API for order management with JWT authentication, role-based access control, and automated business logic.
 
+#Project Structure
+
+Domain: Entities, Enums, Interfaces (repository contracts)
+Persistence: Data access layer, DbContext, Repository implementations
+Services: Business logic layer, Service implementations
+Services.Abstractions: Service interfaces
+Shared: DTOs, Data Transfer Objects
+WebAPI: Controllers, Program.cs, API layer
+
 ## Features
 
 - Customer & order management
