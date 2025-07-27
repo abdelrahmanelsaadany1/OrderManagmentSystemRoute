@@ -2,15 +2,6 @@
 
 ASP.NET Core Web API for order management with JWT authentication, role-based access control, and automated business logic.
 
-#Project Structure
-
-Domain: Entities, Enums, Interfaces (repository contracts)
-Persistence: Data access layer, DbContext, Repository implementations
-Services: Business logic layer, Service implementations
-Services.Abstractions: Service interfaces
-Shared: DTOs, Data Transfer Objects
-WebAPI: Controllers, Program.cs, API layer
-
 ## Features
 
 - Customer & order management
@@ -22,11 +13,28 @@ WebAPI: Controllers, Program.cs, API layer
 
 ## Tech Stack
 
-- ASP.NET 8 Core Web API 
+- ASP.NET Core Web API
 - Entity Framework Core + SQL Server
 - JWT Bearer Authentication
 - BCrypt password hashing
 - Swagger documentation
+
+## Project Structure
+
+- **Domain**: Entities, Enums, Interfaces (repository contracts)
+- **Persistence**: Data access layer, DbContext, Repository implementations
+- **Services**: Business logic layer, Service implementations
+- **Services.Abstractions**: Service interfaces
+- **Shared**: DTOs, Data Transfer Objects
+- **WebAPI**: Controllers, Program.cs, API layer
+
+## Database Location
+
+Database will be created automatically in your local SQL Server instance:
+- **Database Name**: `OrderManagementSystemDB`
+- **Location**: Local SQL Server (`.` server)
+- **Connection**: Windows Authentication (Trusted_Connection=true)
+- **Migration**: Run `dotnet ef database update` to create tables
 
 ## Quick Setup
 
