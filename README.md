@@ -82,7 +82,7 @@ Access: `https://localhost:5001/swagger`
 
 ### Customers
 - `POST /api/customers` - Create customer
-- `GET /api/customers/{id}/orders` - Get customer orders (own only)
+- `GET /api/customers/{id}/orders` - Get customer orders 
 
 ### Products
 - `GET /api/products` - List all products
